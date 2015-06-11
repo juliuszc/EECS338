@@ -1,0 +1,11 @@
+<?xml version="1.0" ?><widget id="http://kangoextensions.com/extensions/popupdemo" version="0.1" xmlns="http://www.w3.org/ns/widgets">
+	<name>Slice</name>
+	<description>Slice of Your Life</description>
+	<author href="http://slimformation.knightlab.com">EECS 338 Team</author>
+	<update-description href=""/>
+	<icon src="icons/icon100.png"/>
+	<content src="background.html"/>
+	<access origin="*"/>
+	<feature name="opera:share-cookies"/>
+    <feature name="opera:contextmenus"/>
+</widget>

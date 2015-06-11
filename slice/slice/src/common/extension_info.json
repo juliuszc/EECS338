@@ -1,0 +1,19 @@
+{
+    "name": "Slice",
+    "version": "0.1",
+    "description": "Slice of Your Life",
+    "creator": "EECS 338 Team",
+    "homepage_url": "http://slimformation.knightlab.com",
+    "background_scripts": ["common.js", "main_utils.js", "lib/js/lowline.min.js", "readingScore.js", "main.js"],
+    "browser_button": {
+        "tooltipText": "Slice",
+        "caption": "Slice",
+        "icon": "images/icons/19.png",
+        "popup": {
+            "url": "popup.html",
+            "width": 400,
+            "height": 500
+        }
+    },
+    "debug": true
+}

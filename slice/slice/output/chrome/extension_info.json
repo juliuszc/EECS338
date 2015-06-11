@@ -1,0 +1,27 @@
+{
+  "kango_version": "1.2.4 744e69cf4136", 
+  "name": "Slice", 
+  "creator": "EECS 338 Team", 
+  "description": "Slice of Your Life", 
+  "background_scripts": [
+    "common.js", 
+    "main_utils.js", 
+    "lib/js/lowline.min.js", 
+    "readingScore.js", 
+    "main.js"
+  ], 
+  "homepage_url": "http://slimformation.knightlab.com", 
+  "version": "0.1", 
+  "debug": true, 
+  "id": "{d04473cf-d3a0-11e0-9b3e-14d64d08fdac}", 
+  "browser_button": {
+    "caption": "Slice", 
+    "icon": "images/icons/19.png", 
+    "popup": {
+      "url": "popup.html", 
+      "width": 400, 
+      "height": 500
+    }, 
+    "tooltipText": "Slice"
+  }
+}

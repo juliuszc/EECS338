@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="photo" />
+    <meta name="twitter:image" content="http://www.joomlaworks.net/images/demos/galleries/abstract/1.jpg" />
+    <title>Starter Template for Bootstrap</title>
+    <link href="lib/css/bootstrap.css" rel="stylesheet">
+    <link href="lib/css/non-responsive.css" rel="stylesheet">
+    <link href="lib/css/slider.css" rel="stylesheet">
+    <link href="lib/css/nv.d3.css" rel="stylesheet">
+    <link href="css/slice.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="pngdataurl"></div>
+
+    <div id="main-content" class="container">
+
+        <div id="activity" class="content-pane">
+            <h3 id="chart-title">Reading Activity</h3>
+            <h3 id="chart-title2">Online Activity</h3>
+            <div id="source-page-visits">
+                <div id="activity-chart-container">
+                    <div id="chart">
+                        <svg></svg>
+                    </div>
+                    <div id="chart2">
+                        <svg></svg>
+                    </div>
+                    <div class="btn btn-inverse" id="toggle-chart">
+                        Reading Activity
+                    </div>
+                    <canvas width="400" height="400" style="display:none"></canvas>
+                    <div id="iframe-block">
+                        <div id="iframe-blocker"></div>
+                        <iframe id="save" allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/tweet_button.html?text=This is my internet usage breakdown.&url=" style="width:60px; height:20px; z-index:1;"></iframe>
+                    </div>
+                </div>
+                <br/>
+                <h3>Top Sources Per Category</h3>
+                <table class="table table-condensed table-hover" id="cat-source-table">
+                    <thead><tr><th>Category</th><th></th><th>Time</th></tr></thead>
+                    <tbody></tbody>
+                </table>
+                <table class="table table-condensed table-hover" id="cat-source-table2">
+                    <thead><tr><th>Category</th><th></th><th>Time</th></tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div> <!-- source-page-visits -->
+        </div> <!-- activity -->
+
+
+        <div id="settings" class="content-pane">
+            <div>
+                <h3>Ignored domains</h3>
+                <table id="ignored-domains-table">
+                    <tr>
+                        <td>(You can select domains to ignore from the <a id="activity-link" href="">Activity tab</a>)</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h3>Number of days to report</h3>
+                <span id="num-reporting-days"></span>&nbsp;<i class="glyphicon glyphicon-pencil edit-num-reporting-days" title="Edit"></i>
+                <p>Note: Slimformation will delete activity data older than the reporting period.</p>
+            </div>
+        </div>
+
+    </div> <!-- #main-content -->
+
+    <script type="text/javascript" src="lib/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="lib/js/lowline.min.js"></script>
+    <script type="text/javascript" src="kango-ui/kango_api.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap-slider.js"></script>
+    <script type="text/javascript" src="lib/js/deethree.js"></script>
+    <script type="text/javascript" src="lib/js/envee.js"></script>
+    <script type="text/javascript" src="constants.js"></script>
+    <script type="text/javascript" src="templates.js"></script>
+    <script type="text/javascript" src="common.js"></script>
+    <script type="text/javascript" src="category.js"></script>
+    <script type="text/javascript" src="goals.js"></script>
+    <script type="text/javascript" src="popup_utils.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+
+</body>
+</html>
+
+
